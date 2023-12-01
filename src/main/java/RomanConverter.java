@@ -26,7 +26,7 @@ public class RomanConverter {
 
         if (!isValidRoman(romanNumeral)) throw new IllegalArgumentException(getErrorMsg());
 
-        // make the counting simpler by replacing values in the string.
+
         romanNumeral = romanNumeral.toUpperCase();
         romanNumeral = romanNumeral.replace("IV", "IIII");
         romanNumeral = romanNumeral.replace("IX", "VIIII");
